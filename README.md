@@ -1,5 +1,11 @@
 # dAppy Doge Layer 2
 
+## Technology
+
+![polygon](https://user-images.githubusercontent.com/19412160/116713227-94223d00-a9a2-11eb-8a4b-efa2b32b60d2.png)
+![torus](https://user-images.githubusercontent.com/19412160/116713236-95ec0080-a9a2-11eb-98d7-56cd24ce2636.png)
+![unity](https://user-images.githubusercontent.com/19412160/116713941-3e01c980-a9a3-11eb-99cb-b7c8f56014ee.png)
+
 ## An NFT game using Polygon and Torus
 
 ![](https://user-images.githubusercontent.com/19412160/116646263-a0c47800-a945-11eb-8920-d56e26fdd8de.png)
