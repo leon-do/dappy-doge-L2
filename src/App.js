@@ -13,6 +13,9 @@ const onboard = Onboard({
       web3 = new Web3(wallet.provider);
       console.log(`${wallet.name} is now connected`);
     },
+    network: (networkId) => {
+      mintDappyDoge()
+    }
   },
   walletSelect: {
     wallets: [
@@ -21,6 +24,20 @@ const onboard = Onboard({
     ],
   },
 });
+
+const mintDappyDoge = async () => {
+  const from = (await web3.eth.getAccounts())[0];
+  const contract = new web3.eth.Contract(abi, "0xf6BE367Ba794b063608C70922877481b91F20a93");
+
+  const mintBalance = await contract.methods.mintBalance(from).call()
+  console.log({mintBalance})
+
+  const {blockNumber} = await contract.methods.mintDoge().send({from, value: 0})
+
+  console.log(`https://explorer-mainnet.maticvigil.com/blocks/${blockNumber}/transactions`)
+
+  console.log({mintBalance})
+};
 
 function App() {
   const login = async () => {
@@ -31,20 +48,6 @@ function App() {
     } catch (error) {
       console.log(error);
     }
-  };
-
-  const mintDappyDoge = async () => {
-    const from = (await web3.eth.getAccounts())[0];
-    const contract = new web3.eth.Contract(abi, "0xf6BE367Ba794b063608C70922877481b91F20a93");
-
-    const mintBalance = await contract.methods.mintBalance(from).call()
-    console.log({mintBalance})
-
-    const {blockNumber} = await contract.methods.mintDoge().send({from, value: 0})
-
-    console.log(`https://explorer-mainnet.maticvigil.com/blocks/${blockNumber}/transactions`)
-
-    console.log({mintBalance})
   };
 
   return (
