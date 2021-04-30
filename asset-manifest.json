@@ -20,7 +20,7 @@
     "static/js/8.abb09206.chunk.js.map": "/dappy-doge-L2/static/js/8.abb09206.chunk.js.map",
     "static/js/9.05e41b35.chunk.js": "/dappy-doge-L2/static/js/9.05e41b35.chunk.js",
     "static/js/9.05e41b35.chunk.js.map": "/dappy-doge-L2/static/js/9.05e41b35.chunk.js.map",
-    "main.css": "/dappy-doge-L2/static/css/main.9ddd7a75.chunk.css",
+    "main.css": "/dappy-doge-L2/static/css/main.181d4f5f.chunk.css",
     "main.js": "/dappy-doge-L2/static/js/main.20efe038.chunk.js",
     "main.js.map": "/dappy-doge-L2/static/js/main.20efe038.chunk.js.map",
     "runtime-main.js": "/dappy-doge-L2/static/js/runtime-main.2e3d49a7.js",
@@ -118,7 +118,7 @@
     "static/js/57.5ab9df20.chunk.js": "/dappy-doge-L2/static/js/57.5ab9df20.chunk.js",
     "static/js/57.5ab9df20.chunk.js.map": "/dappy-doge-L2/static/js/57.5ab9df20.chunk.js.map",
     "index.html": "/dappy-doge-L2/index.html",
-    "static/css/main.9ddd7a75.chunk.css.map": "/dappy-doge-L2/static/css/main.9ddd7a75.chunk.css.map",
+    "static/css/main.181d4f5f.chunk.css.map": "/dappy-doge-L2/static/css/main.181d4f5f.chunk.css.map",
     "static/js/0.b0ad46b5.chunk.js.LICENSE.txt": "/dappy-doge-L2/static/js/0.b0ad46b5.chunk.js.LICENSE.txt",
     "static/js/12.32610869.chunk.js.LICENSE.txt": "/dappy-doge-L2/static/js/12.32610869.chunk.js.LICENSE.txt",
     "static/js/13.2f3e5bd1.chunk.js.LICENSE.txt": "/dappy-doge-L2/static/js/13.2f3e5bd1.chunk.js.LICENSE.txt",
@@ -132,7 +132,7 @@
   "entrypoints": [
     "static/js/runtime-main.2e3d49a7.js",
     "static/js/12.32610869.chunk.js",
-    "static/css/main.9ddd7a75.chunk.css",
+    "static/css/main.181d4f5f.chunk.css",
     "static/js/main.20efe038.chunk.js"
   ]
 }
