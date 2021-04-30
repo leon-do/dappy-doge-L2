@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #4a4a4a;
+}
+
+.App-button {
+  font-size: 1.33em;
+  font-weight: bold;
+  border: 1px solid #afafaf;
+  padding: 10px 20px 10px 20px;
+  border-radius: 40px;
+  transition: box-shadow 150ms ease-in-out, background 200ms ease-in-out;
+}
+
+.App-button:hover {
+  cursor: pointer;
+}
+
+.App-signature {
+  width: 265px;
+  word-wrap: break-word;
+  margin: 20px;
+}
