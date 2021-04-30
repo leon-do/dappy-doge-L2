@@ -52,7 +52,7 @@ function App() {
         <span className="App-button" onClick={login}>
           Mint dAppy Doge on Polygon
         </span>
-        <code className="App-signature" href={txUrl}>hhhh{txUrl}</code>
+        <code className="App-signature" href={txUrl}>{txUrl}</code>
       </header>
     </div>
   );
