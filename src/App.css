@@ -2,22 +2,15 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-}
-
 .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #4a4a4a;
+  color: black;
 }
 
 .App-button {
   font-size: 1.33em;
   font-weight: bold;
-  border: 1px solid #afafaf;
+  border: 3px solid lightgreen;
+  background-color: lightgreen;
   padding: 10px 20px 10px 20px;
   border-radius: 40px;
   transition: box-shadow 150ms ease-in-out, background 200ms ease-in-out;

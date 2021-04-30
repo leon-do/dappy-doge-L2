@@ -1,5 +1,4 @@
 import "./App.css";
-import { useState } from "react";
 import Onboard from "bnc-onboard";
 import Web3 from "web3";
 import abi from "./abi"
@@ -24,8 +23,6 @@ const onboard = Onboard({
 });
 
 function App() {
-  const [txUrl, setTxUrl] = useState(null);
-
   const login = async () => {
     try {
       await onboard.walletSelect();
@@ -40,10 +37,14 @@ function App() {
     const from = (await web3.eth.getAccounts())[0];
     const contract = new web3.eth.Contract(abi, "0xf6BE367Ba794b063608C70922877481b91F20a93");
 
-    // const mintBalance = await contract.methods.mintBalance(from).call()
+    const mintBalance = await contract.methods.mintBalance(from).call()
+    console.log({mintBalance})
 
     const {blockNumber} = await contract.methods.mintDoge().send({from, value: 0})
-    setTxUrl(`https://explorer-mainnet.maticvigil.com/blocks/${blockNumber}/transactions`)
+
+    console.log(`https://explorer-mainnet.maticvigil.com/blocks/${blockNumber}/transactions`)
+
+    console.log({mintBalance})
   };
 
   return (
@@ -52,7 +53,6 @@ function App() {
         <span className="App-button" onClick={login}>
           Mint dAppy Doge on Polygon
         </span>
-        <code className="App-signature" href={txUrl}>{txUrl}</code>
       </header>
     </div>
   );
